@@ -1,3 +1,17 @@
+:root {
+    --gradient-from: hsl(252deg 100% 63%);
+    --gradient-to: hsl(257deg 97% 69%);
+    --body-background: #273549;;
+    --header: #F4F4F4;
+    --main-white: #fff;
+    --input-border: #B295FF;
+    --btn-color: #f9f9f9;
+    --btn-bk: #353333;
+    --unit-title: #CCC1FF;;
+    --unit-p: #fff;
+    --switcher-bk: #f9f9f9;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,18 +21,18 @@
 }
 
 body {
-    background-color: #273549;;
+    background-color: var(--body-background);
     position: relative;
     transition: ease-in 1s;
 }
 
-.header {
+header {
     background: linear-gradient(
         246deg,
-        hsl(252deg 100% 63%) 0%,
-        hsl(257deg 97% 69%) 100%
+        var(--gradient-from) 0%,
+        var(--gradient-to) 100%
     );
-    color: #F4F4F4;
+    color: var(--header);
     padding: 2rem 1rem;
     margin-bottom: 23px;
 }
@@ -31,12 +45,12 @@ h1 {
 }
 
 input[type=number] {
-    color: #FFF;
+    color: var(--main-white);
     font-size: 6rem;
     font-weight: 800;
     line-height: 1.5rem;
     border-radius: 5px;
-    border: 2px solid #B295FF;
+    border: 2px solid var(--input-border);
     background: transparent;
     max-width: 20rem;
 }
@@ -47,8 +61,8 @@ input[type=button] {
     margin-top: 27px;
     width: 117px;
     height: 42px;
-    background: #353333;
-    color: #f9f9f9;
+    background: var(--btn-bk);
+    color: var(--btn-color);
     box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
     border-radius: 5px;
     font-weight: 500;
@@ -60,7 +74,7 @@ input[type=button] {
 
 
 .convert-section h2 {
-    color: #CCC1FF;
+    color: var(--unit-title);
     font-weight: 600;
     font-size: 18px;
     line-height: 20px;
@@ -71,7 +85,7 @@ input[type=button] {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: var(--unit-p);
     padding: 9px;
 }
 
@@ -81,7 +95,7 @@ input[type=button] {
     height: 2rem;
     right: 1rem;
     top: 1rem;
-    background: #f9f9f9;
+    background: var(--switcher-bk);
     border: none;
     border-radius: 50%;
     font-weight: bold;
