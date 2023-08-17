@@ -5,10 +5,10 @@ Solo projects are meant to challenge the skills you've learnt so far through the
 
 ## Built with
 
-- HTML5
-- CSS3
+- Semantic HTML5
+- CSS3 custom properties
 - Javascript
-- Light-dark mode
+- Light and dark version
 - Figma design files from Scrimba
 
 ## Live URL
