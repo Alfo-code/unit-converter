@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 maximum-scale=1.0" >
+    <title>Unit converter</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="stylesheet" id="css-file" href="index.css">
+    <link href="https://fonts.googleapis.com/css?family=Inter:100,200,300,regular,500,600,700,800,900" rel="stylesheet" />
+</head>
+<body>
+    <button title="switch mode" id="switcher">🌙</button>
+    <div class="container">
+        <div class="header">
+            <h1>Metric/Imperial Unit Conversion</h1>
+            <input type="number" min="1" value="1" id="input-field" required>
+            <input type="button" value="Convert" id="convert-btn">
+        </div>
+        <main>
+            <div class="convert-section">
+                <h2>Length (Meter/Feet)</h2>
+                <p id="length">1 meter = 3.281 foot | 1 foot = 0.305 meter</p>
+            </div>
+            <div class="convert-section">
+                <h2>Volume (Liters/Gallons)</h2>
+                <p id="volume">1 liter = 0.264 gallon | 1 gallon = 3.785 liter</p>
+            </div>
+            <div class="convert-section">
+                <h2>Mass (Kilograms/Pounds)</h2>
+                <p id="mass">1 kilogram = 2.205 pound | 1 pound = 0.454 kilogram</p>
+            </div>
+        </main>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
